@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Alarmas | Nethersoft</title>
+    <meta name="Sistema de gestión para sensores">
+    <meta name="Emanuel Benetti">
+    <!-- View port para que la escala sea 1:1 en todos los dispositivos, evitando que haga zoom el navegador y corte el contenido. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- le agregue un div para despues aplicarle css a todo este bloque de top navigation -->
+    <div class="topnav">
+      <ul>
+      <li><a href="dashboard.html">Inicio</a></li>
+      <li><a href="sensores.html">Sensores</a></li>
+      <li><a class="active" href="alarms.html">Alarmas</a></li>
+      <li><a href="planes.html">Cambiar de plan</a></li>
+      </ul>
+    </div>
+
+    <div class="alarmaGrid">
+      <h1 class="titulo">Configurar alarmas:</h1>
+      <form class="formAlarm" action="#" method="post">
+        <label for="ubiq">Seleccione ubicación:</label>
+          <select id="ubiq" name="ubiq">
+            <option value="elem1">Depósito Concordia</option>
+            <option value="elem2">Almacén Paraná</option>
+            <option value="elem3">Silo Norte</option>
+            <option value="elem4">Silo Sur</option>
+          </select><br>
+        <label for="t_max">Temperatura máxima:</label>
+        <input type="text" id="t_max" name="t_max">°C<br>
+        <label for="t_min">Temperatura mínima:</label>
+        <input type="text" id="t_min" name="t_min">°C<br>
+        <label for="h_max">Humedad máxima:</label>
+        <input type="text" id="h_max" name="h_max">%<br>
+        <label for="h_min">Humedad mínima:</label>
+        <input type="text" id="h_min" name="h_min">%<br>
+        <input type="submit" name="alarma_enviar" value="Agregar alarma">
+      </form>
+      <!-- lo mismo que el topnav pero para el footer -->
+      <div class="footer">
+        <ul>
+          <li><a href="terms.html">Términos y condiciones</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="aboutus.html">Sobre nosotros</a></li>
+          <li><a href="sitemap.html">Mapa del sitio</a></li>
+        </ul>
+        <p>© 2021 Nethersoft, all rights reserved.</p>
+        <!-- link con imagen para las redes sociales, usando los iconos de Font Awesome. Las redes sociales obviamente no existen -->
+        <a href="https://www.facebook.com/Nethersoft" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com/Nethersoft" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/Nethersoft" class="fa fa-instagram"></a>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacto | Nethersoft</title>
+    <meta name="Sistema de gestión para sensores">
+    <meta name="Emanuel Benetti">
+    <!-- View port para que la escala sea 1:1 en todos los dispositivos, evitando que haga zoom el navegador y corte el contenido. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- le agregue un div para despues aplicarle css a todo este bloque de top navigation -->
+    <div class="topnav">
+      <ul>
+      <li><a href="dashboard.html">Inicio</a></li>
+      <li><a href="sensores.html">Sensores</a></li>
+      <li><a href="alarms.html">Alarmas</a></li>
+      <li><a href="planes.html">Cambiar de plan</a></li>
+      </ul>
+    </div>
+
+    <h1>Contactate con nosotros:</h1>
+
+
+    <form action="#" method="post">
+
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
+      <label for="apellido">Apellido:</label><br>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido" required><br>
+      <label for="mail">E-mail:</label><br>
+      <input type="email" id="mail" name="mail" placeholder="Ingrese correo" required><br><br>
+
+
+        <label for="estado">Estado civil:</label><br>
+          <select id="estado" name="estado">
+          <option value="solterx">Soltero/a</option>
+          <option value="casadx">Casado/a</option>
+        </select>
+        <br>
+      <textarea name="message" rows="10" cols="30" placeholder="Deje aqui su mensaje" required></textarea>
+      <br>
+      <input type="reset" value="Limpiar formulario">
+      <input type="submit" value="Enviar formulario">
+      <br><br>
+      <label for="news">¿Desea recibir el Newsletter?</label>
+      <input type="checkbox" name="news" value="">
+    </form>
+
+    <div class="footer">
+      <ul>
+        <li><a href="terms.html">Términos y condiciones</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="aboutus.html">Sobre nosotros</a></li>
+        <li><a href="sitemap.html">Mapa del sitio</a></li>
+      </ul>
+
+      <p>© 2021 Nethersoft, all rights reserved.</p>
+
+      <!-- link con imagen para las redes sociales, usando los iconos de Font Awesome. Las redes sociales obviamente no existen -->
+        <a href="https://www.facebook.com/Nethersoft" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com/Nethersoft" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/Nethersoft" class="fa fa-instagram"></a>
+    </div>
+</body>
+</html>
