@@ -1,62 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Alarmas | Nethersoft</title>
-    <meta name="Sistema de gestión para sensores">
-    <meta name="Emanuel Benetti">
-    <!-- View port para que la escala sea 1:1 en todos los dispositivos, evitando que haga zoom el navegador y corte el contenido. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alarmas | Nethersoft</title>
+  <link rel="stylesheet" href="../css/mystyles.css">
 
-  <body>
-    <!-- le agregue un div para despues aplicarle css a todo este bloque de top navigation -->
-    <div class="topnav">
-      <ul>
-      <li><a href="dashboard.html">Inicio</a></li>
-      <li><a href="sensores.html">Sensores</a></li>
-      <li><a class="active" href="alarms.html">Alarmas</a></li>
-      <li><a href="planes.html">Cambiar de plan</a></li>
-      </ul>
+</head>
+
+<body>
+
+  <!-- font-awesome cdn -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+  </script>
+
+
+  <!-- Barra de navegacion. Le agrego "is-primary" para que use el color que defini en el sass como primario 
+    El icono de la marca deberia llevar a la web corporativa de la empresa, pero como no es una empresa real te lleva a un rickroll -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <img src="../media/nethersoft.png" width="auto" height="auto">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-    <div class="alarmaGrid">
-      <h1 class="titulo">Configurar alarmas:</h1>
-      <form class="formAlarm" action="#" method="post">
-        <label for="ubiq">Seleccione ubicación:</label>
-          <select id="ubiq" name="ubiq">
-            <option value="elem1">Depósito Concordia</option>
-            <option value="elem2">Almacén Paraná</option>
-            <option value="elem3">Silo Norte</option>
-            <option value="elem4">Silo Sur</option>
-          </select><br>
-        <label for="t_max">Temperatura máxima:</label>
-        <input type="text" id="t_max" name="t_max">°C<br>
-        <label for="t_min">Temperatura mínima:</label>
-        <input type="text" id="t_min" name="t_min">°C<br>
-        <label for="h_max">Humedad máxima:</label>
-        <input type="text" id="h_max" name="h_max">%<br>
-        <label for="h_min">Humedad mínima:</label>
-        <input type="text" id="h_min" name="h_min">%<br>
-        <input type="submit" name="alarma_enviar" value="Agregar alarma">
-      </form>
-      <!-- lo mismo que el topnav pero para el footer -->
-      <div class="footer">
-        <ul>
-          <li><a href="terms.html">Términos y condiciones</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-          <li><a href="aboutus.html">Sobre nosotros</a></li>
-          <li><a href="sitemap.html">Mapa del sitio</a></li>
-        </ul>
-        <p>© 2021 Nethersoft, all rights reserved.</p>
-        <!-- link con imagen para las redes sociales, usando los iconos de Font Awesome. Las redes sociales obviamente no existen -->
-        <a href="https://www.facebook.com/Nethersoft" class="fa fa-facebook"></a>
-        <a href="https://www.twitter.com/Nethersoft" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com/Nethersoft" class="fa fa-instagram"></a>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#">
+          Inicio
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Monitoreo
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="dashboard.html">
+              Vista general
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="alarms.html">
+              Alarmas
+            </a>
+            <a class="navbar-item" href="sensores.html">
+              Sensores
+            </a>
+          </div>
+        </div>
+
+        <a class="navbar-item" href="planes.html">
+          Planes
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="register.html">
+              <strong>Registrarse</strong>
+            </a>
+            <a class="button is-primary" href="login.html">
+              <strong>Iniciar sesión</strong>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+  </nav>
+
+
+  <!-- El titulo es un hero banner (para que tenga el mismo color que la topnav cambiar is-dark por is-primary) -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-body">
+        <p class="title">
+          Configurar alarmas:
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="subtitle">Seleccione para que ubicación va a definir una alarma:</p>
+      <!-- has-addons hace que se pegue el field con el boton -->
+      <div class="field has-addons">
+        <!-- is-expanded  es para que el campo ocupe el resto del espacio disponible, mientras que fullwidth es para que intente ocupar el maximo espacio de su contenedor-->
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select name="lugar">
+              <option value="almacen_parana">Almacen Parana</option>
+              <option value="galpon_concordia">Galpon Concordia</option>
+              <option value="silo_norte_b">Silo Norte - Granja B</option>
+              <option value="silo_sur_b">Silo Sur - Granja B</option>
+              <option value="deposito_bsas">Depósito Buenos Aires</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-primary">Elegir</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <a class="button is-dark" href="aboutus.html">Sobre la empresa</a>
+          <a class="button is-dark" href="contact.html">Contacto</a>
+          <a class="button is-dark" href="terms.html">Legales</a>
+        </div>
+        <div class="column is-2">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="column is-2">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span>Twitter</span>
+          </a>
+        </div>
+        <div class="column is-2">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

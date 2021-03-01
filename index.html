@@ -1,139 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nethersoft</title>
-    <link rel="stylesheet" href="css/mystyles.css">
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nethersoft</title>
+  <link rel="stylesheet" href="css/mystyles.css">
 
-    <!-- font-awesome cdn -->
-    <script src= 
-    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'> 
-    </script> 
+</head>
+
+<body>
+
+  <!-- font-awesome cdn -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+  </script>
 
 
-    <!-- Barra de navegacion. Le agrego "is-primary" para que use el color que defini en el sass como primario 
+  <!-- Barra de navegacion. Le agrego "is-primary" para que use el color que defini en el sass como primario 
     El icono de la marca deberia llevar a la web corporativa de la empresa, pero como no es una empresa real te lleva a un rickroll -->
-    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-          <img src="media/nethersoft.png" width="auto" height="auto">
-        </a>
-    
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="#">
-            Inicio
-          </a>
-    
-          <a class="navbar-item" href="sitios/dashboard.html">
-            Dashboard
-          </a>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <img src="media/nethersoft.png" width="auto" height="auto">
+      </a>
 
-          <a class="navbar-item" href="sitios/planes.html">
-            Planes
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#">
+          Inicio
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Monitoreo
           </a>
-    
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Sobre la empresa
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="sitios/dashboard.html">
+              Vista general
             </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item"  href="sitios/aboutus.html">
-                Quienes somos
-              </a>
-              <a class="navbar-item" href="sitios/contact.html">
-                Contactanos
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="sitios/terms.html">
-                Terminos y condiciones
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Registrarse</strong>
-              </a>
-              <a class="button is-primary">
-                <strong>Iniciar sesión</strong>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-     <h1 class="title">
-      Llevá la tecnología a un nuevo nivel.
-      </h1>
-      <div class="block">
-      <p class="subtitle">
-        Una nueva forma de realizar las mismas tareas.
-      </p>
-      </div>
-      <div class="block">tecnología avanza a un ritmo imparable, pero las soluciones que se ofrecen no siempre son accesibles.</p></div>
-      <div class="block">Nuestra prioridad es ayudarte a mantener tus animales en la mejor condición posible.</div>
-      <div class="block">Trabajamos con sensores creados en nuestros laboratorios para traerte la revolución tecnológica hasta tu campo.</div>
-      
-
-    <nav class="navbar is-black is-fixed-bottom" role="navigation" aria-label="main navigation">
-      <div id="navbarFooter" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item is-spaced" href="sitios/sitemap.html">
-            Mapa del sitio
-          </a>
-        </div>
-
-        <div class="navbar-center">
-          <div class="navbar-item">
-          <span class="navbar-item"> Nethersoft™ 2021 - Todos los derechos reservados </span>
-          </div>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a class="button is-black">
-              <span class="icon">
-                <i class="fab fa-facebook"></i>
-              </span>
-              <span>Facebook</span>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="sitios/alarms.html">
+              Alarmas
+            </a>
+            <a class="navbar-item" href="sitios/sensores.html">
+              Sensores
             </a>
           </div>
+        </div>
+
+        <a class="navbar-item" href="sitios/planes.html">
+          Planes
+        </a>
+      </div>
+
+      <div class="navbar-end">
         <div class="navbar-item">
-          <a class="button is-black">
-          <span class="icon">
-            <i class="fab fa-twitter"></i>
-              </span>
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Registrarse</strong>
+            </a>
+            <a class="button is-primary">
+              <strong>Iniciar sesión</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- El titulo es un hero banner (para que tenga el mismo color que la topnav cambiar is-dark por is-primary) -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-body">
+        <p class="title">
+          Te acercamos a la tecnología sin pagar de más
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          La avicultura, como actividad económica, contempla más de un siglo. Es en
+          las últimas cuatro décadas cuando se desarrolla la actividad de forma profesional, materializándose en
+          explotaciones muy tecnificadas que también se traducen en la dedicación plena a esta actividad por parte del
+          avicultor.
+        </div>
+        <div class="column is-6">
+          <img src="../media/pollitos.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          <img src="../media/network.jpg" alt="">
+        </div>
+        <div class="column is-6">
+          Si bien el objetivo de la granja no ha cambiado, persiguiendo “suministrar
+          las condiciones de bienestar a las aves, en cada etapa de la vida, de forma que podamos conseguir la máxima
+          expresión de su potencial genético”, <strong>esto hoy sólo se consigue con un control ambiental correcto
+            (temperatura,
+            humedad, gases, etc.)</strong>. En este ámbito puede decirse que se ha producido un avance considerable con
+          la llegada
+          de materiales de construcción más adecuados y sistemas de control, ordenadores, sondas y otros instrumentos
+          cada vez más sofisticados y exactos. Pero extremadamente caros en Argentina.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          Nuestra empresa ofrece un servicio único para modernizar las granjas clásicas sin tener que demoler todo y
+          comenzar desde cero.
+          Contamos con tecnología de punta hecha en el país a precios competitivos en pesos. Por primera vez usted puede
+          monitorear lo que pasa en su granja desde cualquier parte del mundo desde su telefono, PC o tablet.
+        </div>
+        <div class="column is-6">
+          <img src="../media/digital.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          <img src="../media/wemos.png" alt="">
+        </div>
+        <div class="column is-6">
+          Nuestros sensores miden temperatura y humedad de forma precisa. Contamos con alarmas personalizables para cada
+          etapa de la crianza, para que puedas tomas las medidas acordes y maximizar el rendimiento de tu granja.
+          Vas a poder ver en tiempo real como afecta cada acción en el reciento, desde encender un ventilador o abrir
+          los rociadores, hasta activar las persianas para evitar la luz del sol.
+          Damos soporte 24/7 telefónicamente y en caso de emergencias podemos dar soporte en sitio en menos de 24hs en
+          la provincia o 48hs en el resto del país.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--    <footer class="footer">   -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <a class="button is-dark" href="sitios/aboutus.html">Sobre la empresa</a>
+          <a class="button is-dark" href="sitios/contact.html">Contacto</a>
+          <a class="button is-dark" href="sitios/terms.html">Legales</a>
+        </div>
+        <div class="column is-2">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="column is-2">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
             <span>Twitter</span>
           </a>
         </div>
-          <div class="navbar-item">
-            <a class="button is-black">
-              <span class="icon">
-                <i class="fab fa-instagram"></i>
-              </span>
-              <span>Instagram</span>
-            </a>
-          </div>
+        <div class="column is-2">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+            <span>Instagram</span>
+          </a>
         </div>
-        
       </div>
-    </nav>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
