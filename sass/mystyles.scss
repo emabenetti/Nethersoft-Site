@@ -3,7 +3,7 @@
 // Importo la fuente de Open Sans
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-// Colores de la marca
+// Colores de la marca.
 $rojo_amaranth: #d90429;
 $rojo_imperial: #ef233c;
 $azul_alice: #edf2f4;
@@ -12,15 +12,17 @@ $negro_space: #2b2d42;
 
 
 // Cambio las variables globales de Bulma para que se adapten a mi diseño
+
+//fuente
 $family-sans-serif: "Open Sans", sans-serif;
+
+//estilos basados en los colores definidos arriba
 $grey-dark: $negro_space;
 $grey-light: $gris_manatee;
 $primary: $rojo_amaranth;
 $dark: $negro_space;
 $light: $gris_manatee;
 $link: $negro_space;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
 
 // Aca organizo los cambios a cualquier variable de los componentes de Bulma
 $body-background-color: $azul_alice;
