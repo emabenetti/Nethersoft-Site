@@ -2,21 +2,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Get all "navbar-burger" elements
+    // Busca todos los elementos "navbar-burger" del documento y los guarda en una variable
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    // Check if there are any navbar burgers
+    // Si la variable es mayor que cero (osea que encontró un navburguer)
     if ($navbarBurgers.length > 0) {
 
-        // Add a click event on each of them
+        // Le agrega un evento de click a cada navburguer
         $navbarBurgers.forEach(el => {
             el.addEventListener('click', () => {
 
-                // Get the target from the "data-target" attribute
+                // Busca el atributo "data-target" (que en este caso es el resto del topnav)
                 const target = el.dataset.target;
                 const $target = document.getElementById(target);
 
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                // Activa la clase "is-active" en el "navbar-burger" y en el "navbar-menu"
                 el.classList.toggle('is-active');
                 $target.classList.toggle('is-active');
 
