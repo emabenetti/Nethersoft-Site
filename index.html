@@ -1,208 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nethersoft</title>
-  <link rel="stylesheet" href="css/mystyles.css">
-  <script type="text/javascript" src="js/scripts.js"></script>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nethersoft</title>
+    <link rel="shortcut icon" href="media/nethersoft.png" type="image/x-icon">
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/08342775aa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
-
-  <!-- font-awesome cdn -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
-  </script>
-
-
-  <!-- Barra de navegacion. Le agrego "is-primary" para que use el color que defini en el sass como primario 
-    El icono de la marca deberia llevar a la web corporativa de la empresa, pero como no es una empresa real te lleva a un rickroll -->
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        <img src="media/nethersoft.png" width="auto" height="auto">
-      </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html">
-          Inicio
+    <section class="hero is-primary is-medium is-bold">
+        <div class="hero-head">
+            <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index_nuevo.html">
+                            <strong>NETHERSOFT</strong>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="index.html">
+                                Inicio
+                            </a>
+                            <a class="navbar-item">
+                                Panel de control
+                            </a>
+                            <a class="navbar-item">
+                                Sensores
+                            </a>
+                            <a class="navbar-item">
+                                Alarmas
+                            </a>
+                            <a class="navbar-item" href="#">
+                                Planes
+                            </a>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button is-primary">
+                                        <strong>Registrarse</strong>
+                                    </a>
+                                    <a class="button is-primary">
+                                        <strong>Iniciar sesión</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Sabemos de tecnología. No te quedes afuera.
+                </h1>
+                <h2 class="subtitle">
+                    Estamos revolucionando la forma en la que se trabaja el sector avícola. Nuestros productos te
+                    ofrecen la seguridad y confianza que necesitás para saber que está pasando en tu granja en todo
+                    momento.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="box cta">
+        <a href="#">
+            <p class="has-text-centered">
+                <span class="tag is-info">50% OFF</span> Tené tu instalación hoy y arrancá a pagarla en tu próxima
+                crianza. Nosotros nos encargamos del resto.
+            </p>
         </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Monitoreo
-          </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">
-              Vista general
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="#">
-              Alarmas
-            </a>
-            <a class="navbar-item" href="#">
-              Sensores
-            </a>
-          </div>
-        </div>
-
-        <a class="navbar-item" href="#">
-          Planes
-        </a>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Registrarse</strong>
-            </a>
-            <a class="button is-primary">
-              <strong>Iniciar sesión</strong>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-  </nav>
-
-
-  <!-- El titulo es un hero banner (para que tenga el mismo color que la topnav cambiar is-dark por is-primary) -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-body">
-        <p class="title">
-          Te acercamos a la tecnología sin pagar de más
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns -is-mobile">
-        <div class="column is-6">
-          <div class="block">
-            La avicultura, como actividad económica, contempla más de un siglo. Es en
-            las últimas cuatro décadas cuando se desarrolla la actividad de forma profesional, materializándose en
-            explotaciones muy tecnificadas que también se traducen en la dedicación plena a esta actividad por parte del
-            avicultor.
-          </div>
+    <section class="container">
+        <div class="columns features">
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image has-text-centered pt-4">
+                        <i class="fa fa-microchip fa-lg"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>Tecnología de ultima generación. </h4>
+                            <p>Nuestras placas se comunican através de protocolos nuevos que permiten el envío de
+                                información de forma rápida y segura, independientemente de la calidad de la conexión.
+                                No es necesario contar con banda ancha para tener nuestra red de sensores funcional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image has-text-centered pt-4">
+                        <i class="fa fa-tachometer-alt fa-lg"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>Tecnología de confianza.</h4>
+                            <p>Nuestros sensores son resistentes al agua y al polvo, con certificación industrial ip67.
+                                Además, su precisión es de 0.1ºC y 3% de humedad, asegurando la fiabilidad que
+                                necesitás.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image has-text-centered pt-4">
+                        <i class="fa fa-laptop fa-lg"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4> Tecnología para tu comodidad. </h4>
+                            <p>Podrás acceder a los datos de tu granja en tiempo real desde cualquier dispositivo
+                                conectado a internet, ya sea tu teléfono movil, una tablet o una computadora.
+                                En caso de que te encuentres de viaje en un lugar sin conexión, podes recibir reportes
+                                por SMS con cobertura satelital por un costo adicional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column is-6">
-          <img src="media/pollitos.jpg">
+        <div class="columns features">
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image has-text-centered pt-4">
+                        <i class="fa fa-book fa-lg"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>Instalación y capacitación. </h4>
+                            <p>Los cambios pueden dar un poco de miedo, y eso está bien. Para eso tenemos un equipo
+                                entrenado para guiarte en todas las etapas de la migración. Queremos que disfrutes de
+                                toda la potencia que ofrecen las nuevas tecnologías, pero con la simpleza de siempre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image has-text-centered pt-4">
+                        <i class="fa fa-handshake fa-lg"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>Hacemos los presupuestos a tu medida.</h4>
+                            <p>Cada lugar es diferente, por eso nuestros planes se adaptan a tus necesidades. Mas
+                                sensores? Menos comunicaciones? Reportes personalizados? Comunicate con nosotros y
+                                juntos podemos armar una solución perfecta para vos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image has-text-centered pt-4">
+                        <i class="fa fa-life-ring fa-lg"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4> Soporte completo 24/7. </h4>
+                            <p>Los problemas y los inconvenientes pueden ocurrir. Cortes de internet, cortes de
+                                electricidad, fallas inesperadas. No te vamos a mentir y decirte que somos inmunes a
+                                esas cosas, pero si te prometemos que cuando pasen, vamos a estar listos.<br>
+                                Te brindamos la mejor atención, no importa cuando ni donde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-6">
-          <img src="media/network.jpg" alt="">
+        <div class="intro column is-8 is-offset-2 pt-6">
+            <h2 class="title">Muchos emprendedores ya dieron el salto!</h2><br>
+            <p class="subtitle">Trabajamos todos los días para cumplir con las exceptativas de nuestros clientes y
+                llevarles la mejor experiencia posible.
+                Nuestra misión es actualizar a toda la industria y llevarla a nuevos estándares de calidad.</p>
         </div>
-        <div class="column is-6">
-          <div class="block">
-            Si bien el objetivo de la granja no ha cambiado, persiguiendo “suministrar
-            las condiciones de bienestar a las aves, en cada etapa de la vida, de forma que podamos conseguir la máxima
-            expresión de su potencial genético”, <strong>esto hoy sólo se consigue con un control ambiental correcto
-              (temperatura,
-              humedad, gases, etc.)</strong>. En este ámbito puede decirse que se ha producido un avance considerable
-            con
-            la llegada
-            de materiales de construcción más adecuados y sistemas de control, ordenadores, sondas y otros instrumentos
-            cada vez más sofisticados y exactos. Pero extremadamente caros en Argentina.
-          </div>
+        <div class="sandbox p-2">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent is-shady">
+                    <article class="tile is-child notification is-white has-text-centered">
+                        <p class="title">Empresa</p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores
+                            quibusdam, ea repellat amet ullam ducimus officia nisi fugiat neque!</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-shady">
+                    <article class="tile is-child notification is-white has-text-centered">
+                        <p class="title">Persona</p>
+                        <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo aperiam
+                            deleniti eius doloremque accusamus nobis distinctio, magni quaerat illum, saepe ipsam
+                            cumque. Expedita earum, modi sed recusandae delectus incidunt obcaecati?</p>
+                    </article>
+                </div>
+                <div class="tile is-parent is-shady">
+                    <article class="tile is-child notification is-white has-text-centered">
+                        <p class="title">Académicos</p>
+                        <p class="subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                            pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                            feugiat facilisis.</p>
+                    </article>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-6">
-          <div class="block">
-            Nuestra empresa ofrece un servicio único para modernizar las granjas clásicas sin tener que demoler todo y
-            comenzar desde cero.
-            Contamos con tecnología de punta hecha en el país a precios competitivos en pesos. Por primera vez usted
-            puede
-            monitorear lo que pasa en su granja desde cualquier parte del mundo desde su telefono, PC o tablet.
-          </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3 is-offset-2">
+                    <h2 class="tag is-white is-medium"><strong>Empresa</strong></h2>
+                    <ul>
+                        <li><a class="button is-dark" href="#">Sobre nosotros</a></li>
+                        <li><a class="button is-dark" href="#">Contactanos</a></li>
+                        <li><a class="button is-dark" href="#">Legales</a></li>
+                        <li><a class="button is-dark" href="#">Reportar un problema</a></li>
+                    </ul>
+                </div>
+                <div class="column is-3">
+                    <span class="tag is-white is-medium"><strong>Nethersoft 2021</strong></span>
+                </div>
+                <div class="column is-4">
+                    <span class="tag is-white is-medium"><strong>Encontranos en las redes</strong></span>
+                    <ul>
+                        <li>
+                            <p class="button is-dark">
+                                <span class="icon">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                                <span>Facebook</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="button is-dark">
+                                <span class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                                <span>Twitter</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="button is-dark">
+                                <span class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                <span>Instragram</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content has-text-centered">
+                <p>
+                    <a class="icon" href="https://github.com/emabenetti/Coderhouse-Bulma">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </p>
+                <div class="control level-item">
+                    <a href="https://github.com/emabenetti/Coderhouse-Bulma">
+                        <div class="tags has-addons">
+                            <span class="tag is-white">Emanuel Benetti</span>
+                            <span class="tag is-info">Proyecto Coderhouse</span>
+                            <span class="icon">
+                                <i class="tag is-info fab fa-github"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="column is-6">
-          <img src="media/digital.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-6">
-          <img src="media/wemos.png" alt="">
-        </div>
-        <div class="column is-6">
-          <div class="block">
-            Nuestros sensores miden temperatura y humedad de forma precisa. Contamos con alarmas personalizables para
-            cada
-            etapa de la crianza, para que puedas tomas las medidas acordes y maximizar el rendimiento de tu granja.
-            Vas a poder ver en tiempo real como afecta cada acción en el reciento, desde encender un ventilador o abrir
-            los rociadores, hasta activar las persianas para evitar la luz del sol.
-            Damos soporte 24/7 telefónicamente y en caso de emergencias podemos dar soporte en sitio en menos de 24hs en
-            la provincia o 48hs en el resto del país.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--    <footer class="footer">   -->
-  <footer class="footer">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-2">
-          <a class="button is-dark" href="sitios/aboutus.html">Empresa</a>
-          <a class="button is-dark" href="#">Contacto</a>
-          <a class="button is-dark" href="#">Legales</a>
-        </div>
-        <div class="column is-7">
-          <div class="block">Nethersoft © 2021</div>
-        </div>
-        <div class="column is-3">
-          <p class="button is-dark">
-            <span class="icon">
-              <i class="fab fa-facebook"></i>
-            </span>
-            <span>Facebook</span>
-          </p>
-          <a class="button is-dark">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-            <span>Twitter</span>
-          </a>
-          <a class="button is-dark">
-            <span class="icon">
-              <i class="fab fa-instagram"></i>
-            </span>
-            <span>Instagram</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
+
 </html>
