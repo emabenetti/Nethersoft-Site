@@ -34,8 +34,6 @@ $footer-background-color: $negro_space;
 $card-background-color: linear-gradient(0deg, rgba(239,35,60,1) 0%, rgba(43,45,66,1) 100%);
 $card-color: $azul_alice;
 
-
-
 //Carousel
 * {
   box-sizing: border-box;
@@ -121,3 +119,5 @@ $card-color: $azul_alice;
 @import "../node_modules/bulma/sass/layout/_all.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
