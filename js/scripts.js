@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// declarar variable para el índice del carousel
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -38,6 +39,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+// funcion principal carousel
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
