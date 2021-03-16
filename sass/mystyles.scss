@@ -119,3 +119,7 @@ $card-color: $azul_alice;
 @import "../node_modules/bulma/sass/layout/_all.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
+
+// Import de extensiones extra
+@import "../node_modules/@creativebulma/bulma-badge/src/sass/index.sass";
+@import "../node_modules/bulma-pricingtable/src/sass/index.sass";

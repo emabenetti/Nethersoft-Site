@@ -15,7 +15,9 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
+    "@creativebulma/bulma-badge": "^1.0.1",
     "@glidejs/glide": "^3.4.1",
-    "bulma-carousel": "^4.0.24"
+    "bulma-carousel": "^4.0.24",
+    "bulma-pricingtable": "^0.2.0"
   }
 }

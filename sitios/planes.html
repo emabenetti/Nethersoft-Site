@@ -1,100 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
-<html lang="es">
 <head>
   <meta charset="utf-8">
-
-  <title>Planes | Nethersoft</title>
-  <meta name="Emanuel Benetti">
-  <!-- View port para que la escala sea 1:1 en todos los dispositivos, evitando que haga zoom el navegador y corte el contenido. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <title>Nethersoft | Planes</title>
+  <link rel="shortcut icon" href="media/nethersoft.png" type="image/x-icon">
+  <!-- font-awesome cdn -->
+  <script src="https://kit.fontawesome.com/08342775aa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/mystyles.css">
 </head>
 
 <body>
+  <section class="hero is-primary is-medium is-bold">
+    <div class="hero-head">
+      <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-boxed" href="../index.html">
+              <strong>NETHERSOFT</strong>
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="../index.html">
+                Inicio
+              </a>
+              <a class="navbar-item">
+                Panel de control
+              </a>
+              <a class="navbar-item">
+                Sensores
+              </a>
+              <a class="navbar-item">
+                Alarmas
+              </a>
+              <a class="navbar-item is-active" href="#">
+                Planes
+              </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-link">
+                    <strong>Registrarse</strong>
+                  </a>
+                  <a class="button is-link">
+                    <strong>Iniciar sesión</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
 
-  <body>
-    <div class="topnav">
-      <ul>
-      <li><a class="active" href="planes.html">Elegir un plan</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-      <li><a href="register.html">Regístrate</a></li>
-      <li><a href="login.html">Iniciar sesión</a></li>
-      </ul>
+  <div class="pricing-table mt-3 mb-3">
+    <div class="pricing-plan">
+      <div class="plan-header">PACK DE INICIO</div>
+      <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>1900</span>/mes
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">1 sensor por estructura</div>
+        <div class="plan-item">Soporte técnico en horario comercial</div>
+        <div class="plan-item">Instalación no incluída</div>
+        <div class="plan-item">-</div>
+        <div class="plan-item">-</div>
+      </div>
+      <div class="plan-footer">
+        <button class="button is-fullwidth">Elegir</button>
+      </div>
     </div>
 
-<h1>Elige tu plan premium</h1>
-<br><br>
-<h3>Elegí el plan que mas te convenga dependiendo de tus necesidades:</h3>
+    <div class="pricing-plan is-info">
+      <div class="plan-header">PACK ESTÁNDAR</div>
+      <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>2900</span>/mes
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">3 sensores por estructura</div>
+        <div class="plan-item">Soporte técnico en horario comercial</div>
+        <div class="plan-item">Incluye instalación</div>
+        <div class="plan-item">-</div>
+        <div class="plan-item">-</div>
+      </div>
+      <div class="plan-footer">
+        <button class="button is-fullwidth">Elegir</button>
+      </div>
+    </div>
 
+    <div class="pricing-plan is-active">
+      <div class="plan-header">PACK EMPRESA</div>
+      <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>4900</span>/mes
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">9 sensores por estructura</div>
+        <div class="plan-item">Soporte técnico 24/7</div>
+        <div class="plan-item">Incluye instalación </div>
+        <div class="plan-item">Soporte presencial programado</div>
+        <div class="plan-item">-</div>
+      </div>
+      <div class="plan-footer">
+        <button class="button is-fullwidth">Elegir</button>
+      </div>
+    </div>
 
+    <div class="pricing-plan is-link">
+      <div class="plan-header">PACK PREMIUM</div>
+      <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>6900</span>/mes
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">Cobertura completa</div>
+        <div class="plan-item">Soporte técnico 24/7</div>
+        <div class="plan-item">Incluye instalación </div>
+        <div class="plan-item">Soporte presencial programado</div>
+        <div class="plan-item">Reportes y seguimiento de mejora</div>
+      </div>
+      <div class="plan-footer">
+        <button class="button is-fullwidth">Elegir</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 is-offset-1">
+          <a class="button is-dark" href="#">Sobre nosotros</a>
+        </div>
+        <div class="column is-4">
+          <a class="button is-dark" href="#">Contactanos</a>
+        </div>
+        <div class="column is-4">
+          <a class="button is-dark" href="#">Legales</a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-4 is-offset-1">
+          <p class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span>Facebook</span>
+          </p>
+        </div>
+        <div class="column is-4">
+          <p class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span>Twitter</span>
+          </p>
 
-<table>
-  <tr>
-    <th><strong>Plan invidual</strong></th>
-    <th><strong>Plan empresa</strong></th>
-    <th><strong>Plan premium</strong></th>
-  </tr>
-  <tr>
-    <td>Hasta 10 sensores</td>
-    <td>Hasta 50 sensores</td>
-    <td>Hasta 500 sensores</td>
-  </tr>
-  <tr>
-    <td>Soporte técnico de nivel 1</td>
-    <td>Soporte técnico de nivel 2</td>
-    <td>Soporte técnico personalizado</td>
-  </tr>
-  <tr>
-    <td>Instalación de los equipos no incluída</td>
-    <td>Instalación de los equipos no incluída</td>
-    <td>Instalación de los equipos incluída</td>
-  </tr>
-  <tr>
-    <td>Dos alarmas por sensor</td>
-    <td>Cinco alarmas por sensor</td>
-    <td><ol>
-      <li>Alarmas ilimitadas</li>
-      <li>Notificaciones SMS</li>
-      <li>Reportes semanales de rendimiento</li>
-      <li>Soluciones en menos de 48hs aseguradas</li>
-    </ol></td>
-  </tr>
-
-<tr>
-<td><form class="forms" action="#" method="post">
-  <input type="button" name="button" value="Comenzar">
-</form>
-</td>
-<td><form class="forms" action="#" method="post">
-  <input type="button" name="button" value="Comenzar">
-</form>
-</td>
-<td><form class="forms" action="#" method="post">
-  <input type="button" name="button" value="Comenzar">
-</form>
-</td>
-</tr>
-</table>
-
-
-
-<div class="footer">
-  <ul>
-    <li><a href="terms.html">Términos y condiciones</a></li>
-    <li><a href="contact.html">Contacto</a></li>
-    <li><a href="aboutus.html">Sobre nosotros</a></li>
-    <li><a href="sitemap.html">Mapa del sitio</a></li>
-  </ul>
-
-  <p>© 2021 Nethersoft, all rights reserved.</p>
-
-  <!-- link con imagen para las redes sociales, usando los iconos de Font Awesome. Las redes sociales obviamente no existen -->
-    <a href="https://www.facebook.com/Nethersoft" class="fa fa-facebook"></a>
-    <a href="https://www.twitter.com/Nethersoft" class="fa fa-twitter"></a>
-    <a href="https://www.instagram.com/Nethersoft" class="fa fa-instagram"></a>
-</div>
+        </div>
+        <div class="column is-4">
+          <p class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+            <span>Instragram</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="content has-text-centered mt-6">
+      <div class="control level-item">
+        <a href="https://github.com/emabenetti/Coderhouse-Bulma">
+          <div class="tags has-addons">
+            <span class="tag is-white">Emanuel Benetti</span>
+            <span class="tag is-info">Proyecto Coderhouse</span>
+            <span class="icon">
+              <i class="tag is-info fab fa-github"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
+
 </html>

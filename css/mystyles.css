@@ -7822,3 +7822,539 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (min-width: 1408px) {
   .is-invisible-fullhd {
     visibility: hidden !important; } }
+
+.badge {
+  background-color: #d90429;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  box-shadow: 0 0 0 2px white;
+  color: white;
+  font-size: 0.65rem;
+  height: 14px;
+  line-height: calc(7px + 1px);
+  min-width: 14px;
+  overflow: hidden;
+  padding: 0.05rem 0.15rem;
+  position: absolute;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  transform: translate(50%, -50%);
+  white-space: nowrap; }
+  .badge.is-outlined {
+    background-color: white;
+    border-color: #d90429;
+    color: #d90429; }
+  .badge.is-left {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .badge.is-right {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%); }
+  .badge.is-top {
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    top: 0;
+    transform: translate(-50%, -50%); }
+  .badge.is-top-left {
+    bottom: auto;
+    left: 0;
+    right: auto;
+    top: 0;
+    transform: translate(-50%, -50%); }
+  .badge.is-top-right {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%); }
+  .badge.is-bottom {
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translate(-50%, 50%); }
+  .badge.is-bottom-left {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: auto;
+    transform: translate(-50%, 50%); }
+  .badge.is-bottom-right {
+    bottom: 0;
+    left: auto;
+    right: 0;
+    top: auto;
+    transform: translate(50%, 50%); }
+  .badge.is-white:not(.is-outlined) {
+    background-color: white;
+    color: #0a0a0a; }
+  .badge.is-white.is-outlined {
+    border-color: white;
+    color: white; }
+  .badge.is-black:not(.is-outlined) {
+    background-color: #0a0a0a;
+    color: white; }
+  .badge.is-black.is-outlined {
+    border-color: #0a0a0a;
+    color: #0a0a0a; }
+  .badge.is-light:not(.is-outlined) {
+    background-color: #8d99ae;
+    color: #fff; }
+  .badge.is-light.is-outlined {
+    border-color: #8d99ae;
+    color: #8d99ae; }
+  .badge.is-dark:not(.is-outlined) {
+    background-color: #2b2d42;
+    color: #fff; }
+  .badge.is-dark.is-outlined {
+    border-color: #2b2d42;
+    color: #2b2d42; }
+  .badge.is-primary:not(.is-outlined) {
+    background-color: #d90429;
+    color: #fff; }
+  .badge.is-primary.is-outlined {
+    border-color: #d90429;
+    color: #d90429; }
+  .badge.is-primary.is-light {
+    color: #f5052e; }
+    .badge.is-primary.is-light:not(.is-outlined) {
+      background-color: #ffebee; }
+    .badge.is-primary.is-light.is-outlined {
+      border-color: #d90429; }
+  .badge.is-link:not(.is-outlined) {
+    background-color: #2b2d42;
+    color: #fff; }
+  .badge.is-link.is-outlined {
+    border-color: #2b2d42;
+    color: #2b2d42; }
+  .badge.is-link.is-light {
+    color: #7175a2; }
+    .badge.is-link.is-light:not(.is-outlined) {
+      background-color: #f3f3f7; }
+    .badge.is-link.is-light.is-outlined {
+      border-color: #2b2d42; }
+  .badge.is-info:not(.is-outlined) {
+    background-color: #3298dc;
+    color: #fff; }
+  .badge.is-info.is-outlined {
+    border-color: #3298dc;
+    color: #3298dc; }
+  .badge.is-info.is-light {
+    color: #1d72aa; }
+    .badge.is-info.is-light:not(.is-outlined) {
+      background-color: #eef6fc; }
+    .badge.is-info.is-light.is-outlined {
+      border-color: #3298dc; }
+  .badge.is-success:not(.is-outlined) {
+    background-color: #48c774;
+    color: #fff; }
+  .badge.is-success.is-outlined {
+    border-color: #48c774;
+    color: #48c774; }
+  .badge.is-success.is-light {
+    color: #257942; }
+    .badge.is-success.is-light:not(.is-outlined) {
+      background-color: #effaf3; }
+    .badge.is-success.is-light.is-outlined {
+      border-color: #48c774; }
+  .badge.is-warning:not(.is-outlined) {
+    background-color: #ffdd57;
+    color: rgba(0, 0, 0, 0.7); }
+  .badge.is-warning.is-outlined {
+    border-color: #ffdd57;
+    color: #ffdd57; }
+  .badge.is-warning.is-light {
+    color: #947600; }
+    .badge.is-warning.is-light:not(.is-outlined) {
+      background-color: #fffbeb; }
+    .badge.is-warning.is-light.is-outlined {
+      border-color: #ffdd57; }
+  .badge.is-danger:not(.is-outlined) {
+    background-color: #ef233c;
+    color: #fff; }
+  .badge.is-danger.is-outlined {
+    border-color: #ef233c;
+    color: #ef233c; }
+  .badge.is-danger.is-light {
+    color: #db1029; }
+    .badge.is-danger.is-light:not(.is-outlined) {
+      background-color: #feecee; }
+    .badge.is-danger.is-light.is-outlined {
+      border-color: #ef233c; }
+
+.tabs li {
+  position: relative; }
+
+.pricing-table {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .pricing-table.is-comparative .pricing-plan {
+    border-radius: initial;
+    margin: 0; }
+    .pricing-table.is-comparative .pricing-plan:not(:last-child) {
+      border-right: none; }
+    .pricing-table.is-comparative .pricing-plan:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .pricing-table.is-comparative .pricing-plan:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; }
+    .pricing-table.is-comparative .pricing-plan.is-active {
+      border: 0.1rem solid whitesmoke;
+      border-radius: 4px; }
+  .pricing-table .pricing-plan {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: white;
+    border: 0.1rem solid whitesmoke;
+    border-radius: 4px;
+    list-style-type: none;
+    transition: 0.25s;
+    margin: .5em; }
+    .pricing-table .pricing-plan .plan-header {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background-color: white;
+      color: #2b2d42;
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: .75em;
+      align-content: center;
+      text-align: center; }
+    .pricing-table .pricing-plan .plan-item {
+      background: whitesmoke;
+      border-bottom: 0.1rem solid white;
+      padding: .75em;
+      align-content: center;
+      text-align: center;
+      font-size: .9em;
+      color: #7a7a7a; }
+    .pricing-table .pricing-plan .plan-price {
+      background-color: white;
+      color: #2b2d42;
+      font-size: 0.75rem;
+      font-weight: 400;
+      padding: .75em;
+      align-content: center;
+      text-align: center; }
+      .pricing-table .pricing-plan .plan-price .plan-price-amount {
+        font-size: 2.5rem;
+        font-weight: 700; }
+        .pricing-table .pricing-plan .plan-price .plan-price-amount .plan-price-currency {
+          vertical-align: super;
+          font-size: 1rem !important;
+          font-weight: 400 !important;
+          color: #2b2d42;
+          margin-right: .25rem; }
+    .pricing-table .pricing-plan .plan-footer {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: .75em;
+      align-content: center;
+      text-align: center;
+      margin-top: auto; }
+    .pricing-table .pricing-plan.is-active {
+      box-shadow: 0 8px 12px 0 rgba(122, 122, 122, 0.2);
+      transform: scale(1.05); }
+      .pricing-table .pricing-plan.is-active .plan-price .plan-price-amount {
+        color: #d90429; }
+      .pricing-table .pricing-plan.is-active .plan-footer .button {
+        background-color: #d90429;
+        border-color: transparent;
+        color: #fff; }
+        .pricing-table .pricing-plan.is-active .plan-footer .button:hover, .pricing-table .pricing-plan.is-active .plan-footer .button.is-hovered {
+          background-color: #cc0427;
+          border-color: transparent;
+          color: #fff; }
+        .pricing-table .pricing-plan.is-active .plan-footer .button:focus, .pricing-table .pricing-plan.is-active .plan-footer .button.is-focused {
+          border-color: transparent;
+          box-shadow: 0 0 0.5em rgba(217, 4, 41, 0.25);
+          color: #fff; }
+        .pricing-table .pricing-plan.is-active .plan-footer .button:active, .pricing-table .pricing-plan.is-active .plan-footer .button.is-active {
+          background-color: #c00424;
+          border-color: transparent;
+          color: #fff; }
+        .pricing-table .pricing-plan.is-active .plan-footer .button[disabled] {
+          background-color: #d90429;
+          border-color: transparent; }
+    .pricing-table .pricing-plan.is-white .plan-price .plan-price-amount {
+      color: white; }
+    .pricing-table .pricing-plan.is-white .plan-footer .button {
+      background-color: white;
+      border-color: transparent;
+      color: #0a0a0a; }
+      .pricing-table .pricing-plan.is-white .plan-footer .button:hover, .pricing-table .pricing-plan.is-white .plan-footer .button.is-hovered {
+        background-color: #f9f9f9;
+        border-color: transparent;
+        color: #0a0a0a; }
+      .pricing-table .pricing-plan.is-white .plan-footer .button:focus, .pricing-table .pricing-plan.is-white .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.25);
+        color: #0a0a0a; }
+      .pricing-table .pricing-plan.is-white .plan-footer .button:active, .pricing-table .pricing-plan.is-white .plan-footer .button.is-active {
+        background-color: #f2f2f2;
+        border-color: transparent;
+        color: #0a0a0a; }
+      .pricing-table .pricing-plan.is-white .plan-footer .button[disabled] {
+        background-color: white;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-black .plan-price .plan-price-amount {
+      color: #0a0a0a; }
+    .pricing-table .pricing-plan.is-black .plan-footer .button {
+      background-color: #0a0a0a;
+      border-color: transparent;
+      color: white; }
+      .pricing-table .pricing-plan.is-black .plan-footer .button:hover, .pricing-table .pricing-plan.is-black .plan-footer .button.is-hovered {
+        background-color: #040404;
+        border-color: transparent;
+        color: white; }
+      .pricing-table .pricing-plan.is-black .plan-footer .button:focus, .pricing-table .pricing-plan.is-black .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(10, 10, 10, 0.25);
+        color: white; }
+      .pricing-table .pricing-plan.is-black .plan-footer .button:active, .pricing-table .pricing-plan.is-black .plan-footer .button.is-active {
+        background-color: black;
+        border-color: transparent;
+        color: white; }
+      .pricing-table .pricing-plan.is-black .plan-footer .button[disabled] {
+        background-color: #0a0a0a;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-light .plan-price .plan-price-amount {
+      color: #8d99ae; }
+    .pricing-table .pricing-plan.is-light .plan-footer .button {
+      background-color: #8d99ae;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-light .plan-footer .button:hover, .pricing-table .pricing-plan.is-light .plan-footer .button.is-hovered {
+        background-color: #8692a9;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-light .plan-footer .button:focus, .pricing-table .pricing-plan.is-light .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(141, 153, 174, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-light .plan-footer .button:active, .pricing-table .pricing-plan.is-light .plan-footer .button.is-active {
+        background-color: #7e8ca3;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-light .plan-footer .button[disabled] {
+        background-color: #8d99ae;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-dark .plan-price .plan-price-amount {
+      color: #2b2d42; }
+    .pricing-table .pricing-plan.is-dark .plan-footer .button {
+      background-color: #2b2d42;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-dark .plan-footer .button:hover, .pricing-table .pricing-plan.is-dark .plan-footer .button.is-hovered {
+        background-color: #26283a;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-dark .plan-footer .button:focus, .pricing-table .pricing-plan.is-dark .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(43, 45, 66, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-dark .plan-footer .button:active, .pricing-table .pricing-plan.is-dark .plan-footer .button.is-active {
+        background-color: #212233;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-dark .plan-footer .button[disabled] {
+        background-color: #2b2d42;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-primary .plan-price .plan-price-amount {
+      color: #d90429; }
+    .pricing-table .pricing-plan.is-primary .plan-footer .button {
+      background-color: #d90429;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-primary .plan-footer .button:hover, .pricing-table .pricing-plan.is-primary .plan-footer .button.is-hovered {
+        background-color: #cc0427;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-primary .plan-footer .button:focus, .pricing-table .pricing-plan.is-primary .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(217, 4, 41, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-primary .plan-footer .button:active, .pricing-table .pricing-plan.is-primary .plan-footer .button.is-active {
+        background-color: #c00424;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-primary .plan-footer .button[disabled] {
+        background-color: #d90429;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-link .plan-price .plan-price-amount {
+      color: #2b2d42; }
+    .pricing-table .pricing-plan.is-link .plan-footer .button {
+      background-color: #2b2d42;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-link .plan-footer .button:hover, .pricing-table .pricing-plan.is-link .plan-footer .button.is-hovered {
+        background-color: #26283a;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-link .plan-footer .button:focus, .pricing-table .pricing-plan.is-link .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(43, 45, 66, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-link .plan-footer .button:active, .pricing-table .pricing-plan.is-link .plan-footer .button.is-active {
+        background-color: #212233;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-link .plan-footer .button[disabled] {
+        background-color: #2b2d42;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-info .plan-price .plan-price-amount {
+      color: #3298dc; }
+    .pricing-table .pricing-plan.is-info .plan-footer .button {
+      background-color: #3298dc;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-info .plan-footer .button:hover, .pricing-table .pricing-plan.is-info .plan-footer .button.is-hovered {
+        background-color: #2793da;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-info .plan-footer .button:focus, .pricing-table .pricing-plan.is-info .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(50, 152, 220, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-info .plan-footer .button:active, .pricing-table .pricing-plan.is-info .plan-footer .button.is-active {
+        background-color: #238cd1;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-info .plan-footer .button[disabled] {
+        background-color: #3298dc;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-success .plan-price .plan-price-amount {
+      color: #48c774; }
+    .pricing-table .pricing-plan.is-success .plan-footer .button {
+      background-color: #48c774;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-success .plan-footer .button:hover, .pricing-table .pricing-plan.is-success .plan-footer .button.is-hovered {
+        background-color: #3ec46d;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-success .plan-footer .button:focus, .pricing-table .pricing-plan.is-success .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(72, 199, 116, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-success .plan-footer .button:active, .pricing-table .pricing-plan.is-success .plan-footer .button.is-active {
+        background-color: #3abb67;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-success .plan-footer .button[disabled] {
+        background-color: #48c774;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-warning .plan-price .plan-price-amount {
+      color: #ffdd57; }
+    .pricing-table .pricing-plan.is-warning .plan-footer .button {
+      background-color: #ffdd57;
+      border-color: transparent;
+      color: rgba(0, 0, 0, 0.7); }
+      .pricing-table .pricing-plan.is-warning .plan-footer .button:hover, .pricing-table .pricing-plan.is-warning .plan-footer .button.is-hovered {
+        background-color: #ffdb4a;
+        border-color: transparent;
+        color: rgba(0, 0, 0, 0.7); }
+      .pricing-table .pricing-plan.is-warning .plan-footer .button:focus, .pricing-table .pricing-plan.is-warning .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(255, 221, 87, 0.25);
+        color: rgba(0, 0, 0, 0.7); }
+      .pricing-table .pricing-plan.is-warning .plan-footer .button:active, .pricing-table .pricing-plan.is-warning .plan-footer .button.is-active {
+        background-color: #ffd83d;
+        border-color: transparent;
+        color: rgba(0, 0, 0, 0.7); }
+      .pricing-table .pricing-plan.is-warning .plan-footer .button[disabled] {
+        background-color: #ffdd57;
+        border-color: transparent;
+        box-shadow: none; }
+    .pricing-table .pricing-plan.is-danger .plan-price .plan-price-amount {
+      color: #ef233c; }
+    .pricing-table .pricing-plan.is-danger .plan-footer .button {
+      background-color: #ef233c;
+      border-color: transparent;
+      color: #fff; }
+      .pricing-table .pricing-plan.is-danger .plan-footer .button:hover, .pricing-table .pricing-plan.is-danger .plan-footer .button.is-hovered {
+        background-color: #ee1731;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-danger .plan-footer .button:focus, .pricing-table .pricing-plan.is-danger .plan-footer .button.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba(239, 35, 60, 0.25);
+        color: #fff; }
+      .pricing-table .pricing-plan.is-danger .plan-footer .button:active, .pricing-table .pricing-plan.is-danger .plan-footer .button.is-active {
+        background-color: #e8112b;
+        border-color: transparent;
+        color: #fff; }
+      .pricing-table .pricing-plan.is-danger .plan-footer .button[disabled] {
+        background-color: #ef233c;
+        border-color: transparent;
+        box-shadow: none; }
+
+@media screen and (min-width: 769px), print {
+  .pricing-table.is-comparative {
+    margin: .5rem; }
+    .pricing-table.is-comparative.is-features {
+      display: none; }
+    .pricing-table.is-comparative .plan-item::before {
+      content: attr("data-feature"); }
+  .pricing-table.is-horizontal .pricing-plan {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%; }
+    .pricing-table.is-horizontal .pricing-plan .plan-header {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .pricing-table.is-horizontal .pricing-plan .plan-price {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    .pricing-table.is-horizontal .pricing-plan .plan-items {
+      width: 100%;
+      background-color: whitesmoke;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      column-gap: .1rem; }
+    .pricing-table.is-horizontal .pricing-plan .plan-footer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .pricing-table.is-comparative .pricing-plan {
+    margin: .5rem; }
+    .pricing-table.is-comparative .pricing-plan.is-plan-first-mobile {
+      order: -1; }
+    .pricing-table.is-comparative .pricing-plan.is-features {
+      display: none; }
+    .pricing-table.is-comparative .pricing-plan .plan-item::before {
+      content: attr(data-feature);
+      display: block;
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: #8d99ae; } }
