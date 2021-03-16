@@ -1,20 +1,21 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   box-sizing: border-box; }
 
-/* Position the image container (needed to position the left and right arrows) */
+/* Posición para el container del carousel */
 .container {
   position: relative; }
 
-/* Hide the images by default */
+/* Esconder las imagenes al cargar */
 .mySlides {
   display: none; }
 
-/* Add a pointer when hovering over the thumbnail images */
+/* Cambiar puntero */
 .cursor {
   cursor: pointer; }
 
-/* Next & previous buttons */
+/* Botones atras/adelante */
 .prev,
 .next {
   cursor: pointer;
@@ -30,17 +31,17 @@
   user-select: none;
   -webkit-user-select: none; }
 
-/* Position the "next button" to the right */
+/* Boton adelante a la derecha */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px; }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Efecto al pasarle el mouse */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
 
-/* Number text (1/3 etc) */
+/* Numeros arriba */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -48,14 +49,14 @@
   position: absolute;
   top: 0; }
 
-/* Container for image text */
+/* Container para el texto */
 .caption-container {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white; }
 
-/* Add a transparency effect for thumnbail images */
+/* Miniaturas con transparencia */
 .demo {
   opacity: 0.6; }
 
