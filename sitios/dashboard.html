@@ -1,99 +1,344 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Inicio | Nethersoft</title>
-	<meta name="Sistema de gestión para sensores">
-	<meta name="Emanuel Benetti"><!-- View port para que la escala sea 1:1 en todos los dispositivos, evitando que haga zoom el navegador y corte el contenido. -->
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="../css/styles.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nethersoft | Planes</title>
+    <link rel="shortcut icon" href="media/nethersoft.png" type="image/x-icon">
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/08342775aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/mystyles.css">
 </head>
+
 <body>
-	<!-- le agregue un div para despues aplicarle css a todo este bloque de top navigation -->
-	<div class="topnav">
-		<ul>
-			<li>
-				<a class="active" href="dashboard.html">Inicio</a>
-			</li>
-			<li>
-				<a href="sensores.html">Sensores</a>
-			</li>
-			<li>
-				<a href="alarms.html">Alarmas</a>
-			</li>
-			<li>
-				<a href="planes.html">Cambiar de plan</a>
-			</li>
-		</ul>
-	</div><!-- Por consejo de una tutora puse h1 en Temp y h2 en Humidity -->
-	<!-- Para cumplir con la buena práctica de tener un solo h1 -->
-	<!-- La idea es despues con CSS dejar ambas etiquetas del mismo tamaño -->
-  <div class="fila">
-		<div class="columna">
-			<h1>Temperatura</h1>
-		</div>
-		<div class="columna">
-			<h2>Humedad</h2>
-		</div>
-	</div>
-	<div class="fila">
-		<div class="columna">
-		<h3>Temp promedio depósito Concordia: 26°C</h3>
-		<p>Aca va mas info sobre la temperatura. Como por ejemplo el promedio de la red de sensores, la temperatura maxima y minima registrada hoy, y la temperatura ambiente fuera del edificio.</p><img alt="" src="../media/temp_concordia.png"></div>
-		<div class="columna">
-			<h3>Humedad promedio depósito Concordia: 57%</h3>
-			<p>Aca va mas info sobre la humedad. Como por ejemplo el promedio de la red de sensores, la humeadad maxima y minima registrada hoy, y la humedad ambiente fuera del edificio.</p><img alt="" src="../media/hum_concordia.png"><br>
-			<br>
-		</div>
-	</div>
-	<hr class="rounded">
-	<div class="fila">
-		<div class="columna">
-		<h3>Temp promedio almacén Paraná: 29°C</h3>
-		<p>Aca va mas info sobre la temperatura. Como por ejemplo el promedio de la red de sensores, la temperatura maxima y minima registrada hoy, y la temperatura ambiente fuera del edificio.</p><img alt="" src="../media/temp_parana.png"></div>
-		<div class="columna">
-			<h3>Humedad promedio almacén Paraná: 71%</h3>
-			<p>Aca va mas info sobre la humedad. Como por ejemplo el promedio de la red de sensores, la humeadad maxima y minima registrada hoy, y la humedad ambiente fuera del edificio.</p><img alt="" src="../media/hum_parana.png"><br>
-			<br>
-		</div>
-	</div>
-	<hr class="rounded">
-	<div class="fila">
-		<div class="columna">
-		<h3>Temp promedio silo Norte: 32°C</h3>
-		<p>Aca va mas info sobre la temperatura. Como por ejemplo el promedio de la red de sensores, la temperatura maxima y minima registrada hoy, y la temperatura ambiente fuera del edificio.</p><img alt="" src="../media/temp_silo_norte.png"></div>
-		<div class="columna">
-			<h3>Humedad promedio silo Norte: 32%</h3>
-			<p>Aca va mas info sobre la humedad. Como por ejemplo el promedio de la red de sensores, la humeadad maxima y minima registrada hoy, y la humedad ambiente fuera del edificio.</p><img alt="" src="../media/hum_silo_norte.png"><br>
-			<br>
-		</div>
-	</div>
-	<hr class="rounded">
-	<div class="fila">
-		<div class="columna">
-		<h3>Temp promedio silo Sur: 18°C</h3>
-		<p>Aca va mas info sobre la temperatura. Como por ejemplo el promedio de la red de sensores, la temperatura maxima y minima registrada hoy, y la temperatura ambiente fuera del edificio.</p><img alt="" src="../media/temp_silo_sur.png"></div>
-		<div class="columna">
-			<h3>Humedad promedio silo Sur: 46%</h3>
-			<p>Aca va mas info sobre la humedad. Como por ejemplo el promedio de la red de sensores, la humeadad maxima y minima registrada hoy, y la humedad ambiente fuera del edificio.</p><img alt="" src="../media/hum_silo_sur.png"><br>
-			<br>
-		</div>
-	</div>
-  <div class="footer">
-    <ul>
-      <li><a href="terms.html">Términos y condiciones</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-      <li><a href="aboutus.html">Sobre nosotros</a></li>
-      <li><a href="sitemap.html">Mapa del sitio</a></li>
-    </ul>
+    <section class="hero is-primary is-medium is-bold">
+        <div class="hero-head">
+            <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item is-boxed" href="../index.html">
+                            <strong>NETHERSOFT</strong>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="../index.html">
+                                Inicio
+                            </a>
+                            <a class="navbar-item is-active">
+                                Panel de control
+                            </a>
+                            <a class="navbar-item">
+                                Sensores
+                            </a>
+                            <a class="navbar-item">
+                                Alarmas
+                            </a>
+                            <a class="navbar-item" href="planes.html">
+                                Planes
+                            </a>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button is-link">
+                                        <strong>Registrarse</strong>
+                                    </a>
+                                    <a class="button is-link">
+                                        <strong>Iniciar sesión</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
 
-    <p>© 2021 Nethersoft, all rights reserved.</p>
 
-    <!-- link con imagen para las redes sociales, usando los iconos de Font Awesome. Las redes sociales obviamente no existen -->
-      <a href="https://www.facebook.com/Nethersoft" class="fa fa-facebook"></a>
-      <a href="https://www.twitter.com/Nethersoft" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/Nethersoft" class="fa fa-instagram"></a>
-  </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3 mt-3">
+                <aside class="menu is-hidden-mobile">
+                    <p class="menu-label">
+                        Administración
+                    </p>
+                    <ul class="menu-list">
+                        <li><a class="is-active">Resumen</a></li>
+                        <li><a>Sensores</a></li>
+                        <li><a>Alarmas</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Mapa
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a>Edificios</a>
+                            <ul>
+                                <li><a>Granjas</a></li>
+                                <li><a>Galpones</a></li>
+                                <li><a>Silos</a></li>
+                                <li><a>Almacenes</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Mapa global</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Soporte
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Reportar un error</a></li>
+                        <li><a>Chatear con un técnico</a></li>
+                        <li><a>Planificar una visita</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column is-9 mt-3">
+                <section class="hero is-info welcome is-small">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                Bienvenido, Luciano.
+                            </h1>
+                            <h2 class="subtitle">
+                                Esperamos que tengas un buen día!
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-tiles">
+                    <div class="tile is-ancestor has-text-centered">
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">68</p>
+                                <p class="subtitle">Sensores</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">272</p>
+                                <p class="subtitle">Alarmas</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">2</p>
+                                <p class="subtitle">Sugerencias</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">1</p>
+                                <p class="subtitle">Errores</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Alertas
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </header>
+                            <div class="card-table">
+                                <div class="content">
+                                    <table class="table is-fullwidth is-striped">
+                                        <tbody>
+                                            <tr>
+                                                <article class="message is-danger">
+                                                    <div class="message-header">
+                                                        <p>Error - <small> hace 24 minutos </small></p>
+                                                        <button class="delete" aria-label="delete"></button>
+                                                    </div>
+                                                    <div class="message-body">
+                                                        <a href="sensores.html"><strong>Sensor 1</strong></a> en
+                                                        el <a href="mapa.html">galpón 3</a> está desconectado
+                                                    </div>
+                                                </article>
+                                            </tr>
+                                            <tr>
+                                                <article class="message is-warning">
+                                                    <div class="message-header">
+                                                        <p>Cuidado - <small> hace 3 horas </small></p>
+                                                        <button class="delete" aria-label="delete"></button>
+                                                    </div>
+                                                    <div class="message-body">
+                                                        Se detectó un <strong>aumento de temperatura</strong> en un
+                                                        sector del <a href="mapa.html">Almacén 4</a>
+                                                    </div>
+                                                </article>
+                                            </tr>
+                                            <tr>
+                                                <article class="message is-warning">
+                                                    <div class="message-header">
+                                                        <p>Cuidado - <small> hace 12 horas </small></p>
+                                                        <button class="delete" aria-label="delete"></button>
+                                                    </div>
+                                                    <div class="message-body">
+                                                        Se detectó un <strong>descenso de humedad</strong> en un sector
+                                                        del <a href="mapa.html">Galpon 2</a>
+                                                    </div>
+                                                </article>
+                                            </tr>
+                                            <tr>
+                                                <article class="message is-warning">
+                                                    <div class="message-header">
+                                                        <p>Cuidado - <small> ayer </small></p>
+                                                        <button class="delete" aria-label="delete"></button>
+                                                    </div>
+                                                    <div class="message-body">
+                                                        Se detectó un <strong>aumento de temperatura</strong> en un
+                                                        sector del <a href="mapa.html">Silo 1</a>
+                                                    </div>
+                                                </article>
+                                            </tr>
+                                            <tr>
+                                                <article class="message is-success">
+                                                    <div class="message-header">
+                                                        <p>Conexión exitosa</p>
+                                                        <button class="delete" aria-label="delete"></button>
+                                                    </div>
+                                                    <div class="message-body">
+                                                        <a href="sensores.html"><strong>Sensor 4</strong></a> en
+                                                        el Almacén 3 está conectado.
+                                                    </div>
+                                                </article>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Inventory Search
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-large" type="text" placeholder="">
+                                        <span class="icon is-medium is-left">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <span class="icon is-medium is-right">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    User Search
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-large" type="text" placeholder="">
+                                        <span class="icon is-medium is-left">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <span class="icon is-medium is-right">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4 is-offset-1">
+                    <a class="button is-dark" href="#">Sobre nosotros</a>
+                </div>
+                <div class="column is-4">
+                    <a class="button is-dark" href="#">Contactanos</a>
+                </div>
+                <div class="column is-4">
+                    <a class="button is-dark" href="#">Legales</a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-4 is-offset-1">
+                    <p class="button is-dark">
+                        <span class="icon">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                        <span>Facebook</span>
+                    </p>
+                </div>
+                <div class="column is-4">
+                    <p class="button is-dark">
+                        <span class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>Twitter</span>
+                    </p>
+
+                </div>
+                <div class="column is-4">
+                    <p class="button is-dark">
+                        <span class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span>Instragram</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="content has-text-centered mt-6">
+            <div class="control level-item">
+                <a href="https://github.com/emabenetti/Coderhouse-Bulma">
+                    <div class="tags has-addons">
+                        <span class="tag is-white">Emanuel Benetti</span>
+                        <span class="tag is-info">Proyecto Coderhouse</span>
+                        <span class="icon">
+                            <i class="tag is-info fab fa-github"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
+
 </html>

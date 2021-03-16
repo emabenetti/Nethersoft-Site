@@ -3080,14 +3080,20 @@ a.tag:hover {
   .breadcrumb.has-succeeds-separator li + li::before {
     content: "\0227B"; }
 
-.card {
+.card-index {
   background-image: linear-gradient(0deg, #ef233c 0%, #2b2d42 100%);
   border-radius: 0.25rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #edf2f4;
   max-width: 100%;
   position: relative;
-  height: 100%; }
+  height: 100%;
+  background-color: linear-gradient(0deg, #ef233c 0%, #2b2d42 100%);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #edf2f4;
+  max-width: 100%;
+  position: relative; }
 
 .card-header:first-child, .card-content:first-child, .card-footer:first-child {
   border-top-left-radius: 0.25rem;
