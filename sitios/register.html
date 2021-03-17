@@ -1,59 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
-<html lang="es">
 <head>
   <meta charset="utf-8">
-
-  <title>Registrarse | Nethersoft</title>
-  <meta name="Emanuel Benetti">
-  <!-- View port para que la escala sea 1:1 en todos los dispositivos, evitando que haga zoom el navegador y corte el contenido. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <title>Nethersoft | Crear una cuenta</title>
+  <link rel="shortcut icon" href="media/nethersoft.png" type="image/x-icon">
+  <!-- font-awesome cdn -->
+  <script src="https://kit.fontawesome.com/08342775aa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/mystyles.css">
 </head>
 
 <body>
-  <div class="topnav">
-    <ul>
-    <li><a href="planes.html">Elegir un plan</a></li>
-    <li><a href="contact.html">Contacto</a></li>
-    <li><a class="active" href="register.html">Regístrate</a></li>
-    <li><a href="login.html">Iniciar sesión</a></li>
-    </ul>
-  </div>
+  <section class="hero is-primary is-medium is-bold">
+    <div class="hero-head">
+      <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-boxed" href="../index.html">
+              <strong>NETHERSOFT</strong>
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="../index.html">
+                Inicio
+              </a>
+              <a class="navbar-item" href="dashboard.html">
+                Panel de control
+              </a>
+              <a class="navbar-item">
+                Sensores
+              </a>
+              <a class="navbar-item">
+                Alarmas
+              </a>
+              <a class="navbar-item" href="planes.html">
+                Planes
+              </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-white is-active" href="#">
+                    <strong>Registrarse</strong>
+                  </a>
+                  <a class="button is-link" href="login.html">
+                    <strong>Iniciar sesión</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
 
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-4 is-offset-4">
+          <h3 class="title has-text-black">CREAR UNA CUENTA</h3>
+          <hr class="login-hr">
+          <p class="subtitle has-text-black mb-6 pb-5">Ingrese un correo y una contraseña.</p>
+          <div class="box">
+            <figure class="avatar">
+              <img src="../media/user.png" height="128px" width="128px">
+            </figure>
+            <form>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="email" placeholder="ejemplo@email.com" autofocus="">
+                </div>
+              </div>
 
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="password" placeholder="contraseña">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="password" placeholder="repetir contraseña">
+                </div>
+              </div>
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Deseo recibir noticias y promociones
+                </label>
+              </div>
+              <button class="button is-block is-primary is-large is-fullwidth">Registrarse <i class="fa fa-sign-in"
+                  aria-hidden="true"></i></button>
+            </form>
+          </div>
+          <p class="has-text-grey">
+            <a href="login.html">Iniciar sesión</a> &nbsp;·&nbsp;
+            <a href="recuperar_pass.html">Recuperar contraseña</a> &nbsp;·&nbsp;
+            <a href="contact.html">Ayuda</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h1>Registrarse</h1>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 is-offset-1">
+          <a class="button is-dark" href="#">Sobre nosotros</a>
+        </div>
+        <div class="column is-4">
+          <a class="button is-dark" href="#">Contactanos</a>
+        </div>
+        <div class="column is-4">
+          <a class="button is-dark" href="#">Legales</a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-4 is-offset-1">
+          <p class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span>Facebook</span>
+          </p>
+        </div>
+        <div class="column is-4">
+          <p class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span>Twitter</span>
+          </p>
 
-  <form action="#" method="post">
-    <label for="uid">Usuario:</label><br>
-    <input type="email" id="uid" name="uid" placeholder="Ingrese aquí su correo" required><br><br>
-    <label for="lname">Contraseña:</label><br>
-    <input type="password" id="pass" name="pass" placeholder="Ingrese aquí su Contraseña" required><br>
-    <input type="password" id="pass" name="pass" placeholder="Vuelva a escribir su Contraseña" required><br><br>
-    <input type="submit" value="Registro">
-
-      <!-- Este vinculo te lleva a la pagina de login -->
-      <br><br>Ya tenes una cuenta? <a href="login.html">Iniciar sesion</a>
-  </form>
-
-
-  <div class="footer">
-    <ul>
-      <li><a href="terms.html">Términos y condiciones</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-      <li><a href="aboutus.html">Sobre nosotros</a></li>
-      <li><a href="sitemap.html">Mapa del sitio</a></li>
-    </ul>
-
-    <p>© 2021 Nethersoft, all rights reserved.</p>
-
-    <!-- link con imagen para las redes sociales, usando los iconos de Font Awesome. Las redes sociales obviamente no existen -->
-      <a href="https://www.facebook.com/Nethersoft" class="fa fa-facebook"></a>
-      <a href="https://www.twitter.com/Nethersoft" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/Nethersoft" class="fa fa-instagram"></a>
-  </div>
+        </div>
+        <div class="column is-4">
+          <p class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+            <span>Instragram</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="content has-text-centered mt-6">
+      <div class="control level-item">
+        <a href="https://github.com/emabenetti/Coderhouse-Bulma">
+          <div class="tags has-addons">
+            <span class="tag is-white">Emanuel Benetti</span>
+            <span class="tag is-info">Proyecto Coderhouse</span>
+            <span class="icon">
+              <i class="tag is-info fab fa-github"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="../js/scripts.js"></script>
 </body>
+
 </html>
