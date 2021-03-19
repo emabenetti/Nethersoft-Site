@@ -64,6 +64,7 @@
 .demo:hover {
   opacity: 1; }
 
+/* Estilo para el login */
 .login-hr {
   border-bottom: 1px solid black; }
 
@@ -77,6 +78,21 @@
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+
+/* Estilo para el mapa */
+.mapa {
+  /* position:absolute; left: 0; right: 0; bottom: 0; top: 0px;  */
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 999999;
+  height: 100%; }
 
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
