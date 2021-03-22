@@ -35,7 +35,7 @@
               <a class="navbar-item" href="dashboard.html">
                 Panel de control
               </a>
-              <a class="navbar-item" href="sensores.html">
+              <a class="navbar-item is-active" href="sensores.html">
                 Sensores
               </a>
               <a class="navbar-item" href="#">
@@ -51,7 +51,7 @@
                   <a class="button is-link" href="register.html">
                     <strong>Registrarse</strong>
                   </a>
-                  <a class="button is-link" href="#">
+                  <a class="button is-link" href="login.html">
                     <strong>Iniciar sesión</strong>
                   </a>
                 </div>
@@ -62,51 +62,136 @@
       </nav>
     </div>
   </section>
-  <div class="section">
-    <div class="box">
-      <div class="field has-addons">
-        <p class="control">
-          <span class="select">
-            <select>
-              <option>Galpon 1</option>
-              <option>Galpon 2</option>
-              <option>Galpon 3</option>
-              <option>Galpon 4</option>
-              <option>Silo Norte</option>
-              <option>Silo Sur</option>
-              <option>Almacen 1</option>
-            </select>
-          </span>
-        </p>
-        <p class="control">
-          <input class="input" type="text" placeholder="Ingrese descripcion">
-        </p>
-        <p class="control">
-          <a class="button">
-            Agregar alarma
-          </a>
-        </p>
-      </div>
 
-      <div class="field has-addons">
-        <p class="control">
-          <span class="select">
-            <select>
-              <option>ºC (temp)</option>
-              <option>% (hum)</option>
-            </select>
-          </span>
-        </p>
-        <p class="control is-expanded">
-          <input class="input" type="text" placeholder="Valor de la alarma">
-        </p>
-        <p class="control">
-          <a class="button">
-            Agregar
-          </a>
-        </p>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3 mt-3">
+        <aside class="menu is-hidden-mobile">
+          <p class="menu-label">
+            Administración
+          </p>
+          <ul class="menu-list">
+            <li><a>Resumen</a></li>
+            <li><a>Sensores</a></li>
+            <li><a class="is-active">Alarmas</a></li>
+          </ul>
+          <p class="menu-label">
+            Mapa
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a>Edificios</a>
+              <ul>
+                <li><a>Granjas</a></li>
+                <li><a>Galpones</a></li>
+                <li><a>Silos</a></li>
+                <li><a>Almacenes</a></li>
+              </ul>
+            </li>
+            <li><a>Mapa global</a></li>
+          </ul>
+          <p class="menu-label">
+            Soporte
+          </p>
+          <ul class="menu-list">
+            <li><a>Reportar un error</a></li>
+            <li><a>Chatear con un técnico</a></li>
+            <li><a>Planificar una visita</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column is-9 mt-3">
+        <section class="hero is-info welcome is-small">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Bienvenido, Luciano.
+              </h1>
+              <h2 class="subtitle">
+                Esperamos que tengas un buen día!
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section class="info-tiles">
+          <div class="tile is-ancestor has-text-centered">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">68</p>
+                <p class="subtitle">Sensores</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">272</p>
+                <p class="subtitle">Alarmas</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">2</p>
+                <p class="subtitle">Sugerencias</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">1</p>
+                <p class="subtitle">Errores</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <div class="section">
+          <div class="columns m-2">
+            <div class="box">
+            <div class="column">
+              <div class="field has-addons">
+                <p class="control">
+                  <span class="select">
+                    <select>
+                      <option>Galpon 1</option>
+                      <option>Galpon 2</option>
+                      <option>Galpon 3</option>
+                      <option>Galpon 4</option>
+                      <option>Silo Norte</option>
+                      <option>Silo Sur</option>
+                      <option>Almacen 1</option>
+                    </select>
+                  </span>
+                </p>
+                <p class="control is-expanded">
+                  <input class="input" type="text" placeholder="Ingrese descripcion">
+                </p>
+              </div>
+
+              <div class="field has-addons">
+                <p class="control">
+                  <span class="select">
+                    <select>
+                      <option>ºC (temp)</option>
+                      <option>% (hum)</option>
+                    </select>
+                  </span>
+                </p>
+                <p class="control is-expanded">
+                  <input class="input" type="text" placeholder="Valor de la alarma">
+                </p>
+                <p class="control">
+                  <a class="button">
+                    Agregar
+                  </a>
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="column is-6">
+              <div id="chart3"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
   <footer class="footer">
@@ -165,7 +250,9 @@
     </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script type="text/javascript" src="../js/scripts.js"></script>
+  <script type="text/javascript" src="../js/apexchart.js"></script>
 </body>
 
 </html>
